@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lelab.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="BarBackgroundColor" Value="#4e89a3"/>
+                <Setter Property="BarTextColor" Value="White"/>
+            </Style>
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="boutonLabStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="white" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

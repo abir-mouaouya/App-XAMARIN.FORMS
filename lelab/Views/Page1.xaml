@@ -1,0 +1,35 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lelab.Views.Page1"
+             Title="Compteur">
+    <ContentPage.Content>
+        <StackLayout   Spacing="0" Orientation="Vertical" >
+            <StackLayout  Orientation="Vertical" BackgroundColor="#518faa">
+                <Label x:Name="Cmp"
+                   FontSize="60" Text="0"
+                   HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     TextColor="white"
+                      Margin="0,70,0,70"
+                   HorizontalTextAlignment="Center"
+                     >
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <OnPlatform.iOS>
+                                HelveticaNeue-Thin
+                            </OnPlatform.iOS>
+                            <OnPlatform.Android>
+                                HelveticaNeue-Thin.ttf#HelveticaNeue-Thin
+                            </OnPlatform.Android>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </StackLayout>
+            <Image Source="lab_separator.png" Aspect="AspectFill"/>
+            <StackLayout Orientation="Vertical"  
+                      HorizontalOptions="FillAndExpand" >
+                <Button  VerticalOptions="Center" Text="Compter" HorizontalOptions="FillAndExpand"  Clicked="CountButtonClicked" BackgroundColor="Black"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

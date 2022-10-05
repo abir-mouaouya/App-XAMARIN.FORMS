@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lelab.Views.menu"
+             Title="Menu">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="0">
+            <StackLayout BackgroundColor="#518faa" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Image Source="lab_logo.png" Aspect="AspectFit" HeightRequest="120"/>
+                <Label  FontSize="30" TextColor="Black" Text="Lelab" Margin="0,90,0,0" HorizontalTextAlignment="Center" >
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <OnPlatform.iOS>
+                                HelveticaNeue-Thin
+                            </OnPlatform.iOS>
+                            <OnPlatform.Android>
+                                HelveticaNeue-Thin.ttf#HelveticaNeue-Thin
+                            </OnPlatform.Android>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </StackLayout>
+            <Image Source="lab_separator.png" Aspect="AspectFill"/>
+            <StackLayout Margin="30,20,30,0" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Button Text="COMPTEUR"  HorizontalOptions="FillAndExpand" BackgroundColor="#clab24" Clicked="ToCountPage"/>
+            </StackLayout>
+            <StackLayout Margin="30,20,30,0" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Button Text="Tabs"  HorizontalOptions="FillAndExpand" BackgroundColor="#clab24" Clicked="ToTabsPage"/>
+            </StackLayout>
+            <StackLayout Margin="30,20,30,0" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Button Text="List"  HorizontalOptions="FillAndExpand" BackgroundColor="#clab24" Clicked="ToListPage"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
